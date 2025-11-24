@@ -23,11 +23,11 @@ class CardsAPIClient:
     async def get_all_data(self) -> Dict[str, Any]:
         """
         Ruft alle Cards aus allen Editionen ab
-        GET /api/all-data
+        GET /api/files/all-data
         """
         async with httpx.AsyncClient() as client:
             response = await client.get(
-                f"{self.base_url}/api/all-data",
+                f"{self.base_url}/api/files/all-data",
                 headers=self.headers,
                 timeout=30.0
             )

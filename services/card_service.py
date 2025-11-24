@@ -22,7 +22,7 @@ class CardService:
     ) -> List[Dict[str, Any]]:
         """
         Gibt alle Cards zurück mit optionalen Filtern
-        Nutzt GET /api/all-data von der Node.js API
+        Nutzt GET /api/files/all-data von der Node.js API
         """
         try:
             # Alle Daten von Node.js API holen
